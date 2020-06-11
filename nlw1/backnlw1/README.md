@@ -77,12 +77,17 @@ npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
 Instalar extensão SQlite, ctrl+shift+p, abrir database.sqlite abrir database do projeto, desta forma estará na lateral do vscode.
 
-```console
+Para imagens
 
+```console
+yarn add multer
+yarn add @types/multer -D
 ```
 
+Para validações no backend
 ```console
-
+yarn add celebrate
+yarn add @types/hapi__joi -D
 ```
 
 ```console
