@@ -2,36 +2,60 @@ import React from 'react';
 
 import wppIcon from '../../assets/images/icons/whatsapp.svg';
 
+import api from '../../services/api';
+
 import './styles.css';
 
-const TeacherItem: React.FC = () => {
+export interface Teacher {
+  avatar: string,
+  bio: string,
+  cost: number,
+  id: number,
+  name: string,
+  subject: string,
+  whatsapp: string,
+}
+
+interface TeacherItemProps {
+  teacher: Teacher
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id
+    })
+  }
+
   return (
     <article className="teacher-item">
       <header>
 
-        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Person" />
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Marilene</strong>
-          <span>Química</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
       <p>
-        Entusiasta das melhores tecnologias de química avançada
-      <br />
-        <br />
-      Apaixonada por explodir coisas
-    </p>
+        {teacher.bio}
+      </p>
 
       <footer>
         <p>
           Preço/hora
-        <strong>R$80,00</strong>
+        <strong>R${teacher.cost}</strong>
         </p>
-        <button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={createNewConnection}
+          href={`http://wa.me/${teacher.whatsapp}`}
+        >
           <img src={wppIcon} alt="Whatsapp" />
         Entrar em contato
-      </button>
+      </a>
       </footer>
 
     </article>
