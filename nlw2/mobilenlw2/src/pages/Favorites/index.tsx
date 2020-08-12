@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Image, Text, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
-import { RectButton } from 'react-native-gesture-handler';
+import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
 import styles from './styles';
 
-import landingImg from '../../assets/images/landing.png';
 import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 
 const Favorites: React.FC = () => {
@@ -21,6 +21,20 @@ const Favorites: React.FC = () => {
       <View style={styles.container}>
         <PageHeader title="Meus Proffys Favoritos" />
 
+        <ScrollView
+          style={styles.teacherList}
+          contentContainerStyle={{
+            paddingHorizontal: 16,
+            paddingBottom: 16
+          }}
+        >
+
+          <TeacherItem />
+          <TeacherItem />
+          <TeacherItem />
+          <TeacherItem />
+          <TeacherItem />
+        </ScrollView>
       </View>
 
     </View>
