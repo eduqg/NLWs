@@ -20,8 +20,16 @@ Marketplace to find places collection points.
 
 Find avalable teachers ou become a teacher!
 
-<img src="images/proffy1.png" alt="Ecoleta 1" />
-<img src="images/proffy2.png" alt="Ecoleta 2" />
+Web
+
+<img src="images/proffy1.png" alt="Proffy 1" />
+<img src="images/proffy2.png" alt="Proffy 2" />
+
+Mobile
+
+<img src="images/proffyMobile1.jpeg" width="30%" alt="Proffy 3" />
+<img src="images/proffyMobile2.jpeg" width="30%" alt="Proffy 4" />
+<img src="images/proffyMobile3.jpeg" width="30%" alt="Proffy 5" />
 
 ## Getting Started
 
