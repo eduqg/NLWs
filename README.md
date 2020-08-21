@@ -27,9 +27,7 @@ Web
 
 Mobile
 
-<img src="images/proffyMobile1.jpeg" width="30%" alt="Proffy 3" />
-<img src="images/proffyMobile2.jpeg" width="30%" alt="Proffy 4" />
-<img src="images/proffyMobile3.jpeg" width="30%" alt="Proffy 5" />
+<img src="images/proffyMobile1.jpeg" width="25%" alt="Proffy 3" /><img src="images/proffyMobile2.jpeg" width="25%" alt="Proffy 4" /><img src="images/proffyMobile3.jpeg" width="25%" alt="Proffy 5" />
 
 ## Getting Started
 
