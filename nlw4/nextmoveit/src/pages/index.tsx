@@ -1,9 +1,10 @@
+import Head from 'next/head';
+
 import ExperienceBar from '../components/ExperienceBar'
 import Profile from '../components/Profile';
 import CompleteChallenges from '../components/CompleteChallenges';
 import Countdown from '../components/Countdown';
-
-import Head from 'next/head';
+import ChallengeBox from '../components/ChallengeBox';
 
 import styles from '../styles/pages/Home.module.css';
 
@@ -13,7 +14,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Inicio | Move.it</title>
       </Head>
-      
+
       <ExperienceBar />
 
       <section>
@@ -25,7 +26,7 @@ const Home: React.FC = () => {
         </div>
 
         <div>
-
+          <ChallengeBox />
         </div>
       </section>
     </div>
