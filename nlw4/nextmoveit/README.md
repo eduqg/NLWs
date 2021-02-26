@@ -8,12 +8,16 @@ yarn add typescript @types/react @types/react-dom @types/node -D
 
 CSS apenas para determinados módulos, sem afetar em 'concorrência'.
 
-```console
+### Cookies
 
+```console
+yarn add js-cookie
 ```
 
-```console
+DefinitelyTypes types da comunidade para pacotes sem tipos.
 
+```console
+yarn add @types/js-cookie -D
 ```
 
 ```console
