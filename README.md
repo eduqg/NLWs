@@ -8,15 +8,46 @@ This is the repository of my next level weeks of Rocketseat developing softwares
    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduqg/NLWs?style=for-the-badge">
 </p>
 
-## NLW 1 - Ecoleta
+# NLW 4 React - <span>Move.it</span>
 
-Marketplace to find places collection points.
+Stretching exercices while coding!
 
-<img src="images/ecoleta1.png" alt="Ecoleta 1" />
-<img src="images/ecoleta2.png" alt="Ecoleta 2" />
-<img src="images/ecoleta3.png" alt="Ecoleta 3" />
+Web React Next.js
 
-## NLW 2 - Proffy
+<img src="images/moveit1.png" alt="Move.it 1" />
+<img src="images/moveit2.png" alt="Move.it 2" />
+<img src="images/moveit3.png" alt="Move.it 3" />
+
+## Getting Started
+
+Open the project folder
+
+```console
+cd nlw4/nextmoveit
+```
+
+Install dependencies
+
+```console
+yarn
+```
+
+Start the app
+
+```console
+yarn dev
+```
+
+#### Built With
+
+- [React JS](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+
+# NLW 3
+
+In progress.
+
+# NLW 2 - Proffy
 
 Find avalable teachers ou become a teacher!
 
@@ -29,13 +60,21 @@ Mobile
 
 <img src="images/proffyMobile1.jpeg" width="25%" alt="Proffy 3" /><img src="images/proffyMobile2.jpeg" width="25%" alt="Proffy 4" /><img src="images/proffyMobile3.jpeg" width="25%" alt="Proffy 5" />
 
-## Getting Started
+# NLW 1 - Ecoleta
+
+Marketplace to find places collection points.
+
+<img src="images/ecoleta1.png" alt="Ecoleta 1" />
+<img src="images/ecoleta2.png" alt="Ecoleta 2" />
+<img src="images/ecoleta3.png" alt="Ecoleta 3" />
+
+## Getting Started for NLW 1 and 2
 
 You will need <a href="https://nodejs.org/en/download/package-manager/" target="_blank">NodeJS</a>, <a href="https://yarnpkg.com/en/docs/getting-started" target="_blank">Yarn</a> or Npm.
 
 <!-- <a href="https://www.docker.com/get-started" target="_blank">Docker</a>. -->
 
-### NodeJS Backend
+#### NodeJS Backend
 
 ```console
 yarn
@@ -43,14 +82,14 @@ yarn dev
 
 ```
 
-### ReactJS Frontend
+#### ReactJS Frontend
 
 ```console
 yarn
 yarn start
 ```
 
-### React Native Mobile
+#### React Native Mobile
 
 First install Expo from Play Store. Open the app.
 
@@ -61,11 +100,11 @@ yarn start
 
 With your mobile connected with usb, scan the QR Code to build.
 
-## Optionals
+#### Optionals
 
 1. Rest API Client to requests to backend - <a href="https://insomnia.rest/" target="_blank">Insomnia</a> or <a href="https://www.getpostman.com/" target="_blank">Postman</a>.
 
-## Built With
+#### Built With
 
 - [NodeJS](https://nodejs.org/en/)
 - [React Native](https://facebook.github.io/react-native/)
@@ -87,7 +126,7 @@ With your mobile connected with usb, scan the QR Code to build.
 
 ## What's next
 
-- NLW 3
+- NLW 5
 
 ---
 

@@ -2,6 +2,7 @@ import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
 import Cookies from 'js-cookie';
 
 import challenges from '../../challenges.json';
+import LevelUpModal from '../components/LevelUpModal';
 
 interface IChallenge {
   type: 'body' | 'eye';
@@ -19,6 +20,7 @@ interface IChallengesContextData {
   startNewChallenge: () => void;
   resetChallenge: () => void;
   completeChallenge: () => void;
+  closeLevelUpModal: () => void;
 }
 
 export const ChallengeContext = createContext({} as IChallengesContextData);
@@ -41,6 +43,7 @@ export function ChallengesProvider({
   const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
+  const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
 
   useEffect(() => {
@@ -64,7 +67,12 @@ export function ChallengesProvider({
 
   const levelUp = useCallback(() => {
     setLevel(level + 1);
+    setIsLevelUpModalOpen(true);
   }, [level]);
+
+  const closeLevelUpModal = useCallback(() => {
+    setIsLevelUpModalOpen(false);
+  }, []);
 
   const startNewChallenge = useCallback(() => {
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
@@ -72,7 +80,9 @@ export function ChallengesProvider({
 
     setActiveChallenge(challenge);
 
-    // new Audio('/notification.mp3').play();
+    if (process.env.NODE_ENV === 'production') {
+      new Audio('/notification.mp3').play();
+    }
 
     if (Notification.permission === 'granted') {
       new Notification('Novo desafio!', {
@@ -115,10 +125,13 @@ export function ChallengesProvider({
       startNewChallenge,
       activeChallenge,
       resetChallenge,
-      completeChallenge
+      completeChallenge,
+      closeLevelUpModal
     }}
     >
       {children}
+
+      {isLevelUpModalOpen && <LevelUpModal />}
     </ChallengeContext.Provider>
   );
 }
