@@ -1,0 +1,23 @@
+.container {
+  background: url('../../../public/simbolo.png') no-repeat left;
+  background-size: contain;
+  background-color: #5965E0;
+}
+
+
+.container section {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 992px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25rem;
+  align-content: center;
+
+
+}

@@ -1,0 +1,52 @@
+.containerLoginGithub {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  justify-content: space-between;
+}
+
+.containerLoginGithub > img {
+  margin-bottom: 2rem;
+}
+
+.containerLoginGithub h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 1rem 0;
+}
+
+
+.github {
+  display: flex;
+  align-items: center;
+  color: #B2B9FF;
+  margin: 1rem 0;
+}
+
+.github img {
+  margin-right: 1rem;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+}
+
+.username input {
+  height: 80px;
+  flex: 1;
+  background-color: rgba(0,0,0,0.05);
+  border:0;
+}
+
+.username input::placeholder {
+  padding: 0 2rem;
+  color: #B2B9FF;
+}
+
+.username button {
+  height: 80px;
+  width: 80px;
+  background-color: rgba(0,0,0,0.1);
+  border:0;
+}
