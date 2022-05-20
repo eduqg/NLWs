@@ -8,6 +8,14 @@ This is the repository of my next level weeks of Rocketseat developing softwares
    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduqg/NLWs?style=for-the-badge">
 </p>
 
+# NLW Return - <span>Widget</span>
+
+Feedback widget for web and mobile with screenshot!
+
+react react-native express prisma
+
+<img src="images/widgetMobile1.jpeg" width="25%" alt="Choose type feedback" /><img src="images/widgetMobile2.jpeg" width="25%" alt="Form feedback" /><img src="images/widgetMobile3.jpeg" width="25%" alt="Thanks" />
+
 # NLW 4 React - <span>Move.it</span>
 
 Stretching exercices while coding!

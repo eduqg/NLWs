@@ -44,9 +44,12 @@ Base64 gerado posso visualizar copiando e colando na url do navegador
 
 
  ```console
- 
+ yarn add axios
  ```
 
+.env.local variavel ambiente do vite que é ignorado pelo gitignore.
+
+Importar como import.meta.env.VITE_API_URL
 
  ```console
  
