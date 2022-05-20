@@ -113,6 +113,8 @@ npx tsx
 
 Railway app para deploy, semelhante ao heroku
 
+Provision postgres
+
 ```console
 
 ```
