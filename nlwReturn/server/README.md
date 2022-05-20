@@ -99,11 +99,19 @@ yarn add -D jest @swc/core @swc/jest
 yarn add @types/jest -D 
 ```
 
+Deploy
+
+Mudar de sqlite para postgres. Mudar DATABASE_URL. tsconfig adicionar ultima linha
+
 
 ```console
-
+npx tsx
 ```
 
+"build": "npx tsc",
+"start": "node dist/server.js",
+
+Railway app para deploy, semelhante ao heroku
 
 ```console
 
