@@ -1,4 +1,4 @@
-# Minhas Next Level Weeks - Rocketseat!
+# Next Level Weeks - Rocketseat!
 
 This is the repository of my next level weeks of Rocketseat developing softwares in Node.js, ReactJS and React Native.
 
@@ -14,7 +14,15 @@ Feedback widget for web and mobile with screenshot!
 
 react react-native express prisma
 
-<img src="images/widgetMobile1.jpeg" width="25%" alt="Choose type feedback" /><img src="images/widgetMobile2.jpeg" width="25%" alt="Form feedback" /><img src="images/widgetMobile3.jpeg" width="25%" alt="Thanks" />
+Web
+
+<img src="images/widget1.png" alt="Choose type feedback" />
+<img src="images/widget2.png" alt="Form feedback" />
+<img src="images/widget3.png" alt="Thanks" />
+
+Mobile
+
+<img src="images/widgetMobile1.jpeg" width="25%" alt="Choose type feedback mobile" /><img src="images/widgetMobile2.jpeg" width="25%" alt="Form feedback mobile" /><img src="images/widgetMobile3.jpeg" width="25%" alt="Thanks mobile" />
 
 # NLW 4 React - <span>Move.it</span>
 
@@ -51,10 +59,6 @@ yarn dev
 
 - [React JS](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-
-# NLW 3
-
-In progress.
 
 # NLW 2 - Proffy
 
