@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Video {
+  id            String   @id @default(uuid())
+  name          String
+  path          String // Caminho que vai ser salvo em disco no momento 
+  // O S3, cloudflare R2 podem salvar arquivos
+  // Cloudflare nao cobra taxa de egress, que é a taxa cobrada quando o conteudo é visualizado
+  transcription String?
+  createdAt     DateTime @default(now())
+}
+
+model Prompt {
+  id       String @id @default(uuid())
+  title    String
+  template String
+}
