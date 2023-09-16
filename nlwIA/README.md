@@ -1,5 +1,7 @@
 # NLW IA
 
+Notion
+https://efficient-sloth-d85.notion.site/NLW-13-IA-dc54c0a8b5c04d8198cef71627852d73
 
 ## Web
 
@@ -69,3 +71,49 @@ Criar models e migrar
   npx prisma migrate dev
   npx prisma studio
   ```
+
+Open AI, Vamos usar o whisper, para transcrição de audio e video
+
+Criar secret key e colocar em env
+
+Para ler variáveis de ambiente
+instalar dotenv -D
+
+```shell
+yarn add dotenv -D
+```
+
+
+inset-0 seta todas as propriedades top, right, left, bottom para 0 no css
+
+## ffmpeg
+
+Com webassembly é possível rodar diferentes linguagens no navegador
+ffmpeg possibilita converter arquivos de video e audio
+
+"ffmpeg.wasm is a pure WebAssembly / JavaScript port of FFmpeg enabling video & audio record, convert and stream right inside browsers!"
+
+ffmpeg.wasm
+
+https://ffmpegwasm.netlify.app/docs/getting-started/installation
+
+precisa de versão node 18
+
+
+```shell
+yarn add @ffmpeg/ffmpeg @ffmpeg/util
+```
+
+Para carregar dados iniciais pode ser utilizado react-query ou swr
+
+
+Ajuda a escrever resposta da IA dinamicamente
+
+```shell
+yarn add ai
+```
+
+
+# Seed
+
+ npx prisma db seed

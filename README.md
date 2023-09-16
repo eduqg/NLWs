@@ -8,6 +8,18 @@ This is the repository of my next level weeks of Rocketseat developing softwares
    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/eduqg/NLWs?style=for-the-badge">
 </p>
 
+
+# NLW IA
+
+Title and description generator based on video transcription using openAI
+
+Gerador de título e descrição baseado na transcrição de vídeo utilizando a OpenAI
+
+react vite openai tailwind shadcn/u node fastify
+
+<img src="images/nlwIA.png" alt="NLW IA interface" />
+
+
 # NLW Return - <span>Widget</span>
 
 Feedback widget for web and mobile with screenshot!
